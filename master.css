@@ -1,0 +1,189 @@
+body {
+    background-color: #fff;
+    color: black;
+}
+
+body{
+    font-family: sans-serif, Georgia, 'Times New roman', arial;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+    display: block;
+    background-color: #0ff;
+}
+
+div{
+   
+    
+}
+
+#parent{
+    background-color:inherit;
+    position: static;
+    width: 100%;
+}
+
+#div_prof, #div_educ, #div_car{
+    background-color: rgba(0, 130,130,0.7);
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    z-index: 99;
+}
+
+#div_lang, #div_cont, #div_skill, #div_hob{
+    background-color: #bbb;
+    position: relative;
+    width: 25%;
+    height:max-content;
+    border-bottom: 1px solid #fff;
+    z-index: 100;
+}
+
+#div_prof{  
+    width: 100%;
+    display: block;
+    background: -webkit-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: -o-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%, rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: -moz-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: radial-gradient(farthest-side at 50% 100%,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+}
+
+#div_lang{
+    float: right;
+    text-indent: 25%;
+    border-left: 1px solid #fff;
+}
+
+#div_cont{
+    float: left;
+    text-indent: 25%;
+    border-right: 1px solid #fff;
+}
+
+#div_educ{
+    width: 49.6%;
+    display: inline-block;
+}
+
+#div_skill{
+   float: left;
+   border-right: 1px solid #fff; 
+}
+
+#div_hob{
+float: right;
+}
+
+#div_car{
+    clear: both;
+    border-top: 1px solid #fff;
+    background: -webkit-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.6) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: -o-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%, rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: -moz-radial-gradient(50% 100%,farthest-side,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+    background: radial-gradient(farthest-side at 50% 0%,rgba(0, 130,130,0.7) 10%,rgba(0, 130,130,0.4) ,rgba(0, 130,130,0.7) 20%,rgba(0, 130,130,0.5) ,rgba(0, 130,130,0.7) 30%,rgba(0, 130,130,0.5),rgba(0, 130,130,0.7) 40%);
+}
+#image, #image2{
+    display: none;
+}
+
+#canvas1{
+    background-color: rgba(0, 130,130,0.7);
+}
+
+.son{
+ text-align: center;
+ text-indent: 0%;
+}
+
+span{
+    font-weight: bold;  
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    color: #00f;
+    display: inline-block;
+}
+
+p::first-letter, li::first-letter{
+    text-transform: uppercase;
+}
+#p_noun{
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-shadow: 2px 1px 3px #fff;
+}
+
+.talic{
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: #a0e;
+}
+
+a:hover{
+    color: #00f;
+}
+
+#lien{
+    text-shadow: 0px 1px 3px #fff;
+}
+
+footer{
+    border: 1px solid black
+}
+
+@media screen and (max-width: 900px) {
+    /*affichage sur mobile et petis écrans*/
+    #div_prof, #div_educ, #div_car{
+        width: 100%;
+        background-color: #0ff;
+        float: none;
+
+    }
+    #div_lang, #div_cont, #div_skill, #div_hob{
+        width: 100%;
+        text-align: center;
+        text-indent: 0%;
+        background-color: #0ff;
+    }
+
+    #div_prof:hover, #div_educ:hover, #div_car:hover,#div_lang:hover, #div_cont:hover, #div_skill:hover,#div_hob:hover,#canvas1:hover{
+        border: 3px solid #ff4500;
+    }
+    #canvas1{
+        width: 100%;
+        background-color: #0ff;
+    }
+
+}
+
+@media screen  and (min-width:901px) and (max-width:1280px) {
+
+    #div_educ{
+        width: 39.7%;
+    }
+    #div_skill,#div_hob{
+        width: 100%;
+        float: none;
+        text-align: center;
+        text-indent: 0%;
+    }
+    #div_cont, #div_lang{
+        width: 30%;
+    }
+    #canvas1{
+        width: 100%;
+        background-color: #0ff;
+    }
+}
+
+
